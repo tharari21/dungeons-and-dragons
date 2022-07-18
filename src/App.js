@@ -1,30 +1,26 @@
 import "./App.css";
-import { useState } from "react";
 import React from "react";
 
 // JSX = javascript XML - javascript code written with XML format
 // XML is a markup language like html where you can make open and closing tags with whatever names you want.
 // Components can only return one thing - no siblings allowed
 function App() {
-  return <div></div>;
+  return (
+    <div className="screen">
+      {/*fs-overlay = full screen overlay */}
+      <video autoPlay muted loop id="my-video">
+        <source
+          src="https://a2development.s3.amazonaws.com/H264HD1080.mov"
+          type="video/mp4"
+        ></source>
+      </video>
+      <div className="" id="fs-overlay">
+        <img
+          id="header-img"
+          src="https://1000logos.net/wp-content/uploads/2021/08/Dungeons-and-Dragons-Logo-2014.png"
+        />
+      </div>
+    </div>
+  );
 }
-
-// Allows us to use all the methods and properties that React.Component class has such as useState
-// class App extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     // You'd put all component states in here
-//     this.state = {
-//       count: 0,
-//     };
-//   }
-//   // Runs when component loads
-//   render() {
-//     return (
-//       <div>
-
-//       </div>
-//     );
-//   }
-// }
 export default App;

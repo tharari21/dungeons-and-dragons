@@ -16,5 +16,21 @@
   position: fixed;
   height: 100vh;
   width: 100%;
+  object-fit: fill;
   z-index: -1;
+}
+.menu-links {
+  margin-top: -10%;
+}
+.menu-links h3 {
+  color: white;
+  font-size: 2em;
+  padding-left: 2.5%;
+}
+.menu-links h3:hover {
+  cursor:pointer;
+  color: orange;
+}
+h1,h2,h3 {
+font-family: 'Cinzel'
 }

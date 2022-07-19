@@ -24,14 +24,26 @@ const CreateACharacter = ({ setScreen }) => {
   return (
     <div>
       <h1>Create a Character</h1>
-      <img src={selectedCharImg} className="selected-char-img" alt="" />
-      <select onChange={changeCharacter}>
-        {Object.keys(portraitMap).map((classType) => (
-          <option key={classType} value={portraitMap[classType]}>
-            {classType}
-          </option>
-        ))}
-      </select>
+      <div className="char-select-container">
+        <div>
+          <input
+            type="text"
+            className="char-name"
+            placeholder="Name your Character"
+          />
+          <br />
+          <select onChange={changeCharacter} className="class-select">
+            {Object.keys(portraitMap).map((classType) => (
+              <option key={classType} value={portraitMap[classType]}>
+                {classType}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div>
+          <img src={selectedCharImg} className="selected-char-img" alt="" />
+        </div>
+      </div>
     </div>
   );
 };

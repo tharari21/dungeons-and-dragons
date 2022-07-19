@@ -34,3 +34,8 @@
 h1,h2,h3 {
 font-family: 'Cinzel'
 }
+.selected-char-img {
+  width: 400px;
+  height: auto;
+  display: block;
+}

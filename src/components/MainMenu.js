@@ -5,7 +5,7 @@ const MainMenu = ({ setScreen }) => {
     <div className="screen">
       {/*fs-overlay = full screen overlay */}
       <video autoPlay muted loop id="my-video">
-        <source src="./public/H264HD1080.mov" type="video/mp4"></source>
+        <source src="./H264HD1080.mov" type="video/mp4"></source>
       </video>
       <div className="" id="fs-overlay">
         <img

@@ -10,10 +10,11 @@ function App() {
   const [screen, setScreen] = useState("main");
   return (
     <div>
+      
       {screen === "main" ? (
         <MainMenu setScreen={setScreen} />
       ) : (
-        <CreateACharacter />
+        <CreateACharacter setScreen={setScreen} />
       )}
     </div>
   );
